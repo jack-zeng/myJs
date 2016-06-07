@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ztstack层叠轮播</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="jquery.ZtUi.js"></script>
+</head>
+<body>
+<style type="text/css">
+.banner{ overflow: hidden; height:350px; position:relative; width:100%;
+         background:#f12}
+.banner ul{position: relative;}
+.banner ul li{position: absolute; top:0;left:0; width:100%; height:100%;} 
+</style>
+
+<div class="banner">
+	<ul>
+		<li class="not"><img src="images/b1.jpg" alt=""></li>
+		<li><img src="images/b2.jpg" alt=""></li>
+		<li><img src="images/b3.jpg" alt=""></li>
+	</ul>
+</div>
+	
+<script type="text/javascript">
+
+$(".banner").Ztstack()
+  
+</script>
+
+
+</body>
+</html>
